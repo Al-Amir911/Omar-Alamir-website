@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar Al-Amir — Aeronautical Engineer, AI Systems Specialist & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Omar Mohamed Al-Amir — Aeronautical Engineer turned AI Systems Specialist & Full-Stack Developer. Founder of ClinicOS, Convora, and NXT Level Academy.">
+  <meta name="theme-color" content="#050506">
+  <link rel="stylesheet" href="style.css">
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--2" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--3" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" id="nav-logo">Omar<span>.</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="#about" class="navbar__link" id="nav-about">About</a></li>
+        <li><a href="#projects" class="navbar__link" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" class="navbar__link" id="nav-experience">Experience</a></li>
+        <li><a href="#skills" class="navbar__link" id="nav-skills">Skills</a></li>
+        <li><a href="#education" class="navbar__link" id="nav-education">Education</a></li>
+      </ul>
+      <a href="#contact" class="navbar__cta" id="nav-contact-cta">Get In Touch</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <a href="#about" class="mobile-menu__link" id="mobile-about">About</a>
+    <a href="#projects" class="mobile-menu__link" id="mobile-projects">Projects</a>
+    <a href="#experience" class="mobile-menu__link" id="mobile-experience">Experience</a>
+    <a href="#skills" class="mobile-menu__link" id="mobile-skills">Skills</a>
+    <a href="#education" class="mobile-menu__link" id="mobile-education">Education</a>
+    <a href="#contact" class="mobile-menu__link" id="mobile-contact">Contact</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <img src="assets/hero-bg.png" alt="" class="hero__bg" aria-hidden="true" loading="eager">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+            Open to Opportunities
+          </div>
+          <h1 class="hero__title reveal reveal--delay-1">
+            Hi, I'm <span>Omar Al-Amir</span>
+          </h1>
+          <p class="hero__subtitle reveal reveal--delay-2">
+            Aeronautical Engineer turned AI Systems Specialist & Full-Stack Developer. I build intelligent SaaS products that solve real problems — from managing clinics to automating sales with AI.
+          </p>
+          <div class="hero__actions reveal reveal--delay-3">
+            <a href="#projects" class="btn btn--primary" id="hero-cta-projects">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn--outline" id="hero-cta-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Contact Me
+            </a>
+          </div>
+          <div class="hero__stats reveal reveal--delay-4">
+            <div class="hero__stat">
+              <span class="hero__stat-value" id="stat-projects">3+</span>
+              <span class="hero__stat-label">Products Built</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" id="stat-experience">2+</span>
+              <span class="hero__stat-label">Years Experience</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" id="stat-skills">10+</span>
+              <span class="hero__stat-label">Tech Skills</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image reveal reveal--delay-2">
+          <div class="hero__portrait-glow" aria-hidden="true"></div>
+          <img src="assets/profile.jpg" alt="Omar Mohamed Al-Amir — Portrait" class="hero__portrait">
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">About Me</p>
+        <h2 class="section__title">Engineering Meets AI Innovation</h2>
+        <p class="section__desc">From diagnosing aircraft engines at EgyptAir to building AI-powered SaaS products — I bring the precision of aerospace to software.</p>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm <strong>Omar Mohamed Al-Amir</strong>, a detail-oriented Aeronautical Engineer with a BSc from the Institute of Aviation Engineering and Technology, Cairo. My career pivoted from heavy mechanical engineering into the world of <strong>AI automation and full-stack development</strong>.
+          </p>
+          <p>
+            I apply a <strong>"Safety-First" engineering mindset</strong> to software — the same rigor that ensures aircraft reliability now ensures my AI outputs are consistent, secure, and hallucination-free. I'm passionate about building products that genuinely solve operational chaos.
+          </p>
+          <p>
+            Today, I'm the founder of <strong>ClinicOS</strong> and <strong>Convora</strong> — two SaaS platforms tackling real-world problems in healthcare management and AI-driven customer engagement.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight-card reveal reveal--delay-1" id="highlight-engineering">
+            <div class="highlight-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3 class="highlight-card__title">Engineering Logic</h3>
+            <p class="highlight-card__desc">Advanced diagnostics, root-cause analysis & structural thinking.</p>
+          </div>
+          <div class="highlight-card highlight-card--green reveal reveal--delay-2" id="highlight-ai">
+            <div class="highlight-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3 class="highlight-card__title">AI Specialist</h3>
+            <p class="highlight-card__desc">Expert in LLM prompts for Gemini, Claude & GPT-4.</p>
+          </div>
+          <div class="highlight-card highlight-card--purple reveal reveal--delay-3" id="highlight-detail">
+            <div class="highlight-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <h3 class="highlight-card__title">Detail-Oriented</h3>
+            <p class="highlight-card__desc">Edge-case identification & linguistic accuracy testing.</p>
+          </div>
+          <div class="highlight-card highlight-card--orange reveal reveal--delay-4" id="highlight-adapt">
+            <div class="highlight-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            </div>
+            <h3 class="highlight-card__title">Adaptability</h3>
+            <p class="highlight-card__desc">From aircraft to AI — pivoting across domains with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">My Work</p>
+        <h2 class="section__title">Products I've Built</h2>
+        <p class="section__desc">Solving real problems with software. Each product is built from the ground up with a founder's mindset and an engineer's precision.</p>
+      </div>
+      <div class="projects__grid">
+
+        <!-- ClinicOS — Featured -->
+        <div class="project-card project-card--featured reveal" id="project-clinicos">
+          <div class="project-card__inner">
+            <div class="project-card__image">
+              <img src="assets/clinicos.png" alt="ClinicOS — Clinic Management SaaS Dashboard" class="project-card__img" loading="lazy">
+              <div class="project-card__overlay"></div>
+              <span class="project-card__badge">Featured</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">ClinicOS</h3>
+              <p class="project-card__subtitle">Founder & Lead Developer</p>
+              <p class="project-card__desc">
+                A comprehensive SaaS platform designed to manage clinics and eliminate operational chaos. ClinicOS streamlines appointment scheduling, patient management, doctor coordination, and analytics — giving healthcare providers the tools to focus on what matters: their patients.
+              </p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">SaaS</span>
+                <span class="project-card__tag">Healthcare</span>
+                <span class="project-card__tag">Full-Stack</span>
+                <span class="project-card__tag">Clinic Management</span>
+                <span class="project-card__tag">Analytics</span>
+              </div>
+              <ul class="project-card__bullets">
+                <li>End-to-end clinic workflow management system</li>
+                <li>Patient records, scheduling & billing automation</li>
+                <li>Real-time analytics dashboard for clinic performance</li>
+                <li>Built to prevent chaos and bring order to healthcare operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Convora -->
+        <div class="project-card reveal" id="project-convora">
+          <div class="project-card__image">
+            <img src="assets/convora.png" alt="Convora — AI Sales & Support SaaS Dashboard" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+            <span class="project-card__badge project-card__badge--green">AI SaaS</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Convora</h3>
+            <p class="project-card__subtitle">Founder & Lead Developer · Jan 2026 – Present</p>
+            <p class="project-card__desc">
+              An AI SaaS specializing in sales & support agents integrated with WhatsApp, Facebook, and Instagram APIs. Architected to eliminate hallucinations and ensure persona consistency.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">AI Agents</span>
+              <span class="project-card__tag">LLM</span>
+              <span class="project-card__tag">WhatsApp API</span>
+              <span class="project-card__tag">Meta APIs</span>
+              <span class="project-card__tag">QA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NXT Level Academy -->
+        <div class="project-card reveal" id="project-nxt">
+          <div class="project-card__image">
+            <img src="assets/nxt.png" alt="NXT Level Academy Logo and Illustration" class="project-card__img" loading="lazy">
+            <div class="project-card__overlay"></div>
+            <span class="project-card__badge project-card__badge--purple">EdTech</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">NXT Level Academy</h3>
+            <p class="project-card__subtitle">Founder & Operations Manager · Nov 2025 – Present</p>
+            <p class="project-card__desc">
+              An online English teaching academy for children. Designed educational content workflows and leveraged AI tools for marketing strategy and administrative automation.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">EdTech</span>
+              <span class="project-card__tag">Brand Identity</span>
+              <span class="project-card__tag">AI Automation</span>
+              <span class="project-card__tag">Content Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Experience</p>
+        <h2 class="section__title">My Journey So Far</h2>
+        <p class="section__desc">From aircraft hangars to AI architecture — a trajectory defined by adaptability and relentless growth.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal" id="exp-clinicos">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">2026 – Present</p>
+          <h3 class="timeline__role">Founder & Lead Developer</h3>
+          <p class="timeline__company">ClinicOS (SaaS)</p>
+          <ul class="timeline__desc">
+            <li>Building a SaaS platform to manage clinics and prevent their chaos</li>
+            <li>Designing end-to-end workflows for appointments, records, and analytics</li>
+            <li>Full-stack development with a focus on usability and reliability</li>
+          </ul>
+        </div>
+        <div class="timeline__item reveal" id="exp-convora">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Jan 2026 – Present</p>
+          <h3 class="timeline__role">Founder & Lead Developer</h3>
+          <p class="timeline__company">Convora (AI SaaS)</p>
+          <ul class="timeline__desc">
+            <li>Architected AI Sales & Support agents integrated with WhatsApp, Facebook, and Instagram APIs</li>
+            <li>Conducted extensive QA and "stress-testing" on LLM logic flows to eliminate hallucinations</li>
+            <li>Fine-tuned system prompts for diverse user intents across Arabic and English</li>
+          </ul>
+        </div>
+        <div class="timeline__item reveal" id="exp-nxt">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">Nov 2025 – Present</p>
+          <h3 class="timeline__role">Founder & Operations Manager</h3>
+          <p class="timeline__company">NXT Level Academy</p>
+          <ul class="timeline__desc">
+            <li>Developed an online English teaching academy for children</li>
+            <li>Oversaw brand identity, technical infrastructure, and content workflows</li>
+            <li>Utilized AI tools to streamline administrative tasks and marketing strategy</li>
+          </ul>
+        </div>
+        <div class="timeline__item reveal" id="exp-egyptair">
+          <div class="timeline__dot"></div>
+          <p class="timeline__date">2024 – 2025</p>
+          <h3 class="timeline__role">Engineering Intern</h3>
+          <p class="timeline__company">EgyptAir</p>
+          <ul class="timeline__desc">
+            <li>Collaborated with senior engineering teams on live aircraft maintenance</li>
+            <li>Focused on engine fault diagnosis and structural repairs</li>
+            <li>Applied root-cause analysis ensuring 100% compliance with international safety protocols</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Skills</p>
+        <h2 class="section__title">What I Bring to the Table</h2>
+        <p class="section__desc">A unique blend of aerospace engineering discipline and modern tech expertise.</p>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card reveal" id="skill-ai">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2v2a4 4 0 0 0 8 0v-2h2a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4h-2V6a4 4 0 0 0-4-4z"></path></svg>
+          </div>
+          <h3 class="skill-card__title">AI & Prompt Engineering</h3>
+          <p class="skill-card__desc">Expert-level proficiency in crafting complex system prompts with experience in AI agent evaluation and benchmarking.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">Gemini</span>
+            <span class="skill-card__tag">Claude</span>
+            <span class="skill-card__tag">GPT-4</span>
+            <span class="skill-card__tag">LLM Flows</span>
+            <span class="skill-card__tag">Prompt Design</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card--green reveal" id="skill-dev">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="skill-card__title">Full-Stack Development</h3>
+          <p class="skill-card__desc">Front-end web development, API integrations with Meta Business Suite, and AI automation workflow design.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">HTML/CSS/JS</span>
+            <span class="skill-card__tag">APIs</span>
+            <span class="skill-card__tag">Meta Suite</span>
+            <span class="skill-card__tag">Automation</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card--purple reveal" id="skill-qa">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h3 class="skill-card__title">Testing & QA</h3>
+          <p class="skill-card__desc">Edge-case identification, logic flow debugging, and linguistic accuracy testing in both Arabic and English.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">Edge Cases</span>
+            <span class="skill-card__tag">Logic Flows</span>
+            <span class="skill-card__tag">Debugging</span>
+            <span class="skill-card__tag">Bilingual QA</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card--orange reveal" id="skill-eng">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3 class="skill-card__title">Engineering Logic</h3>
+          <p class="skill-card__desc">Advanced diagnostic skills, structural analysis, and technical documentation from aerospace engineering.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">Root-Cause Analysis</span>
+            <span class="skill-card__tag">Diagnostics</span>
+            <span class="skill-card__tag">Documentation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" id="skill-lang">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3 class="skill-card__title">Languages</h3>
+          <p class="skill-card__desc">Native Arabic proficiency with professional working English — enabling bilingual product development and QA.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">Arabic (Native)</span>
+            <span class="skill-card__tag">English (Professional)</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card--green reveal" id="skill-philosophy">
+          <div class="skill-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+          </div>
+          <h3 class="skill-card__title">Philosophy & AI</h3>
+          <p class="skill-card__desc">Developing an automated YouTube channel on philosophical discourse using AI for script generation and video production.</p>
+          <div class="skill-card__tags">
+            <span class="skill-card__tag">YouTube</span>
+            <span class="skill-card__tag">Automation</span>
+            <span class="skill-card__tag">AI Content</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Education</p>
+        <h2 class="section__title">Academic Foundation</h2>
+      </div>
+      <div class="education__card reveal" id="edu-card">
+        <div class="education__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 10 3 12 0v-5"></path></svg>
+        </div>
+        <div>
+          <h3 class="education__degree">Bachelor of Science in Aerospace Engineering</h3>
+          <p class="education__school">Institute of Aviation Engineering and Technology · Class of 2024</p>
+          <p class="education__details">Specialization: Aircraft Structure and Engine Maintenance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Get In Touch</p>
+        <h2 class="section__title">Let's Build Something Great</h2>
+        <p class="section__desc">Whether you need an AI solution, a SaaS product, or just want to connect — I'd love to hear from you.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="contact__info-desc">Based in Cairo, Egypt. Available for freelance projects, partnerships, and full-time opportunities.</p>
+          <div class="contact__links">
+            <a href="mailto:omarworkacc61@gmail.com" class="contact__link-item" id="contact-email">
+              <div class="contact__link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact__link-text">
+                <span class="contact__link-label">Email</span>
+                <span class="contact__link-value">omarworkacc61@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+201025110560" class="contact__link-item" id="contact-phone">
+              <div class="contact__link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact__link-text">
+                <span class="contact__link-label">Phone</span>
+                <span class="contact__link-value">(+20) 1025110560</span>
+              </div>
+            </a>
+            <div class="contact__link-item" id="contact-location">
+              <div class="contact__link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact__link-text">
+                <span class="contact__link-label">Location</span>
+                <span class="contact__link-value">Cairo, Egypt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="contact-name" class="form__label">Name</label>
+              <input type="text" id="contact-name" class="form__input" placeholder="Your name" required>
+            </div>
+            <div class="form__group">
+              <label for="contact-email-input" class="form__label">Email</label>
+              <input type="email" id="contact-email-input" class="form__input" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="contact-subject" class="form__label">Subject</label>
+            <input type="text" id="contact-subject" class="form__input" placeholder="What's this about?">
+          </div>
+          <div class="form__group">
+            <label for="contact-message" class="form__label">Message</label>
+            <textarea id="contact-message" class="form__textarea" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" id="contact-submit" style="width: 100%; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copyright">&copy; 2026 Omar Mohamed Al-Amir. Built with precision.</p>
+        <div class="footer__socials">
+          <a href="mailto:omarworkacc61@gmail.com" class="footer__social" id="footer-email" aria-label="Email Omar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="tel:+201025110560" class="footer__social" id="footer-phone" aria-label="Call Omar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Temporary files
+.cursor/
+*.log
+node_modules/
+.DS_Store
+Thumbs.db
