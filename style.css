@@ -304,7 +304,7 @@ img {
   bottom: 0;
   background: rgba(2, 2, 3, 0.97);
   backdrop-filter: blur(20px);
-  z-index: 999;
+  z-index: 1100;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -337,7 +337,7 @@ img {
   right: var(--space-lg);
   background: none;
   border: none;
-  color: var(--foreground);
+  color: var(--foreground-muted);
   font-size: 1.5rem;
   cursor: pointer;
   width: 44px;
@@ -345,6 +345,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.25s var(--ease-out);
+}
+
+.mobile-menu__close:hover {
+  color: var(--foreground);
+  transform: rotate(90deg);
 }
 
 /* --- HERO SECTION --- */
